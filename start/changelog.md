@@ -1,6 +1,6 @@
 # 更新日志
 
-## [⏬](https://www.123pan.com/s/BEzKjv-89qqv.html) 2024/2/13 1.0.0 rc3
+## [⏬](https://www.123pan.com/s/BEzKjv-l9qqv.html) 2024/2/13 1.0.0 rc3
  - 修复了归档后缺工作目录的 bug
 
 ## [⏬](https://www.123pan.com/s/BEzKjv-89qqv.html) 2024/2/13 1.0.0 rc2

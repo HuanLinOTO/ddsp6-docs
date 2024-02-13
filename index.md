@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 即刻开始
-      link: /start  
+      link: /start/index
     - theme: alt
       text: 点击加群
       link: https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0

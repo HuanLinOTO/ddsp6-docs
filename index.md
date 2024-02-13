@@ -12,7 +12,7 @@ hero:
       link: /start  
     - theme: alt
       text: 点击加群
-      link: https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=J4P7AGKJpDX83VT5d0QDw6IayxRwtust&authKey=tGUcixejcHw%2B1M2JTyKM2wfvmvIW2Mdaa0gGO%2FDU1OJnvC4G6BUQZUkKq6lXAlfb&noverify=0&group_code=172701496
+      link: https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0
 
 features:
   - title: 使用方便

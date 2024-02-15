@@ -1,6 +1,6 @@
 # 更新日志
 
-## [⏬](https://www.123pan.com/s/BEzKjv-3Eqqv.html) 2024/2/15 1.0.0 rc6
+## [⏬](https://www.123pan.com/s/BEzKjv-EEqqv.html) 2024/2/15 1.0.0 rc6
  - 支持在 WebUI 实现训练暂停
  - 启动 tensorboard 后自动打开
 

@@ -1,6 +1,11 @@
 # 更新日志
-
+## [⏬](https://www.123pan.com/s/BEzKjv-PEqqv.html) 2024/2/15 1.0.0 rc7
+ - 支持保存配置
+ 
 ## [⏬](https://www.123pan.com/s/BEzKjv-EEqqv.html) 2024/2/15 1.0.0 rc6
+:::warning
+此版本 bug 较多，已停止下载
+:::
  - 支持在 WebUI 实现训练暂停
  - 启动 tensorboard 后自动打开
 

@@ -3,6 +3,8 @@
 :::tip
 点击标题左侧的 icon 即可下载对应版本
 :::
+## [⏬](https://www.123pan.com/s/BEzKjv-ykqqv.html) 2024/2/15 1.0.0 rc8
+ - 添加了当 spk 字段缺失时的提醒
 
 ## [⏬](https://www.123pan.com/s/BEzKjv-PEqqv.html) 2024/2/15 1.0.0 rc7
  - 支持保存配置

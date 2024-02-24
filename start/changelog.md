@@ -24,6 +24,13 @@
 :::tip
 点击标题左侧的 icon 即可下载对应版本
 :::
+
+## [⏬](https://www.123pan.com/s/BEzKjv-9fqqv.html) 2024/2/24 1.0.0 rc9
+ - 更新 nsf_hifigan 声码器模型
+ - 去掉了无用日志输出
+ - 添加 FFmpeg，支持 mp3 等其他格式的推理了
+ - 修复了一些小 bug
+
 ## [⏬](https://www.123pan.com/s/BEzKjv-ykqqv.html) 2024/2/15 1.0.0 rc8
  - 添加了当 spk 字段缺失时的提醒
 

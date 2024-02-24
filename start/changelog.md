@@ -14,6 +14,11 @@
 
 :::warning
 再次说明，请使用 **bandizip（最新版本）** 或者 **7zip** 解压整合包，不要使用 winrar 等其他解压软件，否则可能会出现文件损坏、压缩方式不支持的情况。
+<details>
+    <summary>查看图片</summary>
+    <img src="/imgs/{DB89BEF3-A9CF-4d4b-9CDD-D215FBE10D5B}.png"/>
+</details>
+
 :::
 
 :::tip

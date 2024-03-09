@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "幻灵的 DDSP 5.0 "
   text: "非官方整合包文档"
-  tagline: 目前版本 1.0.0 rc7
+  tagline: 目前版本 1.0.0 rc10
   actions:
     - theme: brand
       text: 即刻开始

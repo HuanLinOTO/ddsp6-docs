@@ -31,6 +31,11 @@
 点击标题左侧的 ⏬ 即可下载对应版本
 :::
 
+## [⏬](https://www.123pan.com/s/BEzKjv-NXqqv.html) 2024/3/10 1.0.0 rc10
+ - 修复了写入配置覆盖 spk 的问题
+ - 自带 uvr 部分模型，支持推理
+ - 修复启动脚本的问题
+
 ## [⏬](https://www.123pan.com/s/BEzKjv-9fqqv.html) 2024/2/24 1.0.0 rc9
  - 更新 nsf_hifigan 声码器模型
  - 去掉了无用日志输出

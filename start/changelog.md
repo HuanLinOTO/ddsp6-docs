@@ -31,7 +31,11 @@
 点击标题左侧的 ⏬ 即可下载对应版本
 :::
 
+## [⏬](https://www.123pan.com/s/BEzKjv-jXqqv.html) 2024/3/10 1.0.0 rc10-fixed
+ - 该版本为紧急修复版本 没有功能更新
+
 ## [⏬](https://www.123pan.com/s/BEzKjv-NXqqv.html) 2024/3/10 1.0.0 rc10
+ - 此版本无法使用 请下载上面的 rc10-fixed
  - 修复了写入配置覆盖 spk 的问题
  - 自带 uvr 部分模型，支持推理
  - 修复启动脚本的问题

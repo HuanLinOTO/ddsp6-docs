@@ -29,7 +29,15 @@
 
 :::tip
 点击标题左侧的 ⏬ 即可下载对应版本
+
+从 1.0.0 rc11 开始，包内不再自带 uvr 模型，需要自行下载
+
+下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-MCqqv.html)
 :::
+
+## [⏬](https://www.123pan.com/s/BEzKjv-ICqqv.html) 2024/3/10 1.0.0 rc11
+ - 新增自动混音功能
+ - 修复了一些小 bug
 
 ## [⏬](https://www.123pan.com/s/BEzKjv-jXqqv.html) 2024/3/10 1.0.0 rc10-fixed
  - 该版本为紧急修复版本 没有功能更新

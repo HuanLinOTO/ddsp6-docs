@@ -35,6 +35,11 @@
 下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-MCqqv.html)
 :::
 
+## [⏬](https://www.123pan.com/s/BEzKjv-eCqqv.html) 2024/3/10 1.0.0 rc11-fixed
+ - 修复 rc11 中的一些小 bug
+ - 新增无说话人配置自动 fallback 到默认说话人的功能
+ - ~~再也不深夜写代码了~~
+
 ## [⏬](https://www.123pan.com/s/BEzKjv-ICqqv.html) 2024/3/10 1.0.0 rc11
  - 新增自动混音功能
  - 修复了一些小 bug

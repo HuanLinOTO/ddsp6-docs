@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Nunito;
+    src: local("Nunito"), url(https://nitro.unjs.io/_fonts/nunito-cyrillic-ext-700-normal-oGMLPOwbHV.woff2) format(woff2), url(https://nitro.unjs.io/_fonts/nunito-cyrillic-ext-700-normal-oGMLPOwbHV.woff2) format(woff2), url(https://nitro.unjs.io/_fonts/nunito-cyrillic-ext-700-normal-4zK7LNPcab.woff) format(woff), url(https://nitro.unjs.io/_fonts/nunito-cyrillic-ext-700-normal-4zK7LNPcab.woff) format(woff);
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    font-weight: 700;
+    font-style: normal
+}

@@ -36,6 +36,7 @@
 :::
 
 ## [⏬](https://www.123pan.com/s/BEzKjv-eCqqv.html) 2024/3/10 1.0.0 rc11-fixed
+ - 该版本需要额外下载补丁: [Patch 1 for 1.0.0 rc11-fixed](https://www.123pan.com/s/BEzKjv-18qqv.html) 使用该压缩包内的 webui.bin 覆盖完整包的 webui.bin 即可
  - 修复 rc11 中的一些小 bug
  - 新增无说话人配置自动 fallback 到默认说话人的功能
  - ~~再也不深夜写代码了~~

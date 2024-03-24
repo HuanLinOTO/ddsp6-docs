@@ -68,13 +68,10 @@ const goto = (url: string) => {
         font-weight: bold;
         padding: 64px;
         padding-bottom: 24px;
-        background: linear-gradient(270deg, #1c37ff, #1f33f7, #212eee, #232ae6, #2326de, #2421d5, #241dcd, #2418c5, #2313bd, #220eb5, #2107ae, #2002a6);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        color: #f87171;
         font-family: monospace;
     }
-    
+
     .sub-title {
         font-size: 2.25em;
         font-weight: 500;

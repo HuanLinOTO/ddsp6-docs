@@ -51,7 +51,7 @@ const goto = (url: string) => {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    font-family: Nunito, sans-serif;
+    font-family: sfpro, sans-serif;
     
     .title-bg {
         position: absolute;
@@ -72,6 +72,7 @@ const goto = (url: string) => {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        font-family: monospace;
     }
     
     .sub-title {

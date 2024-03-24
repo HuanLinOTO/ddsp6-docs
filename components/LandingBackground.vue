@@ -3,7 +3,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import '../index.css'
 
-const points = ref(new Array(40).fill(0).map(() => [Math.random(), Math.random()]))
+const points = ref(new Array(15).fill(0).map(() => [Math.random(), Math.random()]))
 
 const poly = computed(() => points.value.map(([x, y]) => `${x * 100}% ${y * 100}%`).join(', '))
 

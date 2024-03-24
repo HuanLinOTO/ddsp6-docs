@@ -20,7 +20,7 @@ const getLatestVersion = () => new Promise((resolve, reject) => {
         };
     });
 })
-
+    
 getLatestVersion().then(version => {
     console.log(version);
     // 复制一份 main_page.vue 到 main_page.vue.bak

@@ -2,11 +2,17 @@
 
 本文档提供了在使用 DDSP-SVC 过程中可能遇到的一些常见错误及其解决方法。
 
+Authors:
+
+[@Charming·](https://space.bilibili.com/399248533)
+[@空客造雾部](https://space.bilibili.com/457021084)
+[@多玩幻灵qwq](https://space.bilibili.com/503423945)
+
 ## The system cannot find the path specified.
 
 - Tips :教你一个生活小技巧：压缩包要解压才能使用。
 
-## OutOfMemoryError: CUDA out of memory. Tried to allocate XX GiB (GPU 0; XX GiB total capacity; XX GiB already allocated; XX MiB Free; XX GiB reserved in total by PyTorch)
+## CUDA out of memory. Tried to allocate ...
 
 **不要怀疑，你的显卡显存或虚拟内存不够用了。以下是 100% 解决问题的解决方法，照着做必能解决，请不要再在各种地方提问这个问题了**
 
@@ -47,21 +53,13 @@
  - 3.把数据扔进显存
  - 4.开启随用随取    
 
-## 无法训练或无法自动切片
+## num_samples should be a positive integer value,but got num_samples=0
 
-错误信息可能为：
+数据集过短，切不出验证，或者可能根本没数据集
 
-- num_samples should be a positive integer value,but got num_samples=0
-- RuntimeError: Carnot 1oad audio from fi1e: ffprobe' not found. Please install ffmpeg in your system to use non-WAV audio fi1e formats and make sure 'ffprobe'
+## RuntimeError: Carnot load audio from file: ffprobe' not found. Please install ffmpeg in your system to use non-WAV audio file formats and make sure 'ffprobe'
 
-解决方法：
-
-- 1.检查音频文件后缀是否为 .wav ，如不是，请使用如格式工厂、ffmpeg这类软件修改格式，切勿手动修改
-- 2.请检查说话人名字是否包含了中文，有则更改并且重新预处理
-- 3.是否点了保存为配置，有也重新进行预处理
-- 4.检查数据是否过短
-- 5.检查数据名字是否包含了空格
-
+更新整合包
 
 ## fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
 
@@ -69,7 +67,7 @@
 
 ## 为什么我没有去除背景音乐和自动混音？
 
-- 请在下载界面下载[uvr权重](https://www.123pan.com/s/BEzKjv-MCqqv.html)文件，并且解压后放入ddsp项目的根目录内。
+- 请在下载界面下载 [uvr权重](https://www.123pan.com/s/BEzKjv-MCqqv.html) 文件，并且解压后放入ddsp项目的根目录内。
 
 ## Error请将你的数据集放到 dataset_raw/你的角色名字文件夹中
 
@@ -77,13 +75,13 @@
 
 ## raise ValueError(' [x] nan ddsp_loss ') ValueError:  [x] nan ddsp_loss
 
-- 建议更换为`fp32`进行训练，以解决此问题。
+- 建议更换为 `fp32` 进行训练，以解决此问题。
 
 ## Connection errored out.
 
-- 请勿关闭终端。关闭 WebUI 终端会导致无法连接。你把 WebUI 终端都关了当然连接不上了……（
+- 请勿关闭终端。关闭 WebUI 终端会导致无法连接。你把 WebUI 终端都关了当然连接不上了……
 
-## Error No such file or directory:data/train pitch aug_dict.npy
+## Error No such file or directory: data/train pitch aug_dict.npy
 
 - 请重新进行数据预处理。
 

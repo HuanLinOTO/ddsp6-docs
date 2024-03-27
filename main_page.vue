@@ -1,38 +1,41 @@
 <template>
-    <div class="title-box">
-        <!-- <div class="title-bg"></div> -->
-        <LandingBackground></LandingBackground>
-        <div class="title">DDSP 5.0</div>
-        <div class="sub-title">非官方整合包文档</div>
-        <div class="sub-sub-title">易于使用 | 可用 CPU 训练 | 面向小白</div>
+    <div>
+        <div class="title-box">
+            <!-- <div class="title-bg"></div> -->
+            <LandingBackground></LandingBackground>
+            <div class="title">DDSP 5.0</div>
+            <div class="sub-title">非官方整合包文档</div>
+            <div class="sub-sub-title">易于使用 | 可用 CPU 训练 | 面向小白</div>
+        </div>
+        <n-flex justify="center">
+            <n-button  type="primary" size="large" @click="goto('/start/')">
+                <template #icon>
+                    <RocketLaunchRound></RocketLaunchRound>
+                </template>
+                马上开始
+            </n-button>
+            <n-button  type="info" size="large" @click="goto('https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0')">
+                <template #icon>
+                    <ChatBubbleFilled></ChatBubbleFilled>
+                </template>
+                加入群聊
+            </n-button>
+            <n-button type="info" size="large" @click="goto('/start/changelog.html#|| LatestVersionLinkPlaceHolder ||')">
+                <template #icon>
+                    <FileDownloadFilled></FileDownloadFilled>
+                </template>
+                最新版本 || LatestVersionPlaceHolder ||
+            </n-button>
+        </n-flex>
     </div>
-    <n-flex justify="center">
-        <n-button  type="primary" size="large" @click="goto('/start/')">
-            <template #icon>
-                <RocketLaunchRound></RocketLaunchRound>
-            </template>
-            马上开始
-        </n-button>
-        <n-button  type="info" size="large" @click="goto('https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0')">
-            <template #icon>
-                <ChatBubbleFilled></ChatBubbleFilled>
-            </template>
-            加入群聊
-        </n-button>
-        <n-button type="info" size="large" @click="goto('/start/changelog.html#|| LatestVersionLinkPlaceHolder ||')">
-            <template #icon>
-                <FileDownloadFilled></FileDownloadFilled>
-            </template>
-            最新版本 || LatestVersionPlaceHolder ||
-        </n-button>
-    </n-flex>
 </template>
 
 <script lang="ts" setup>
 import LandingBackground from './components/LandingBackground.vue';
 import * as naive from "naive-ui"
-const { NButton, NFlex } = naive
+const { NButton, NFlex, useMessage } = naive
 import { RocketLaunchRound, ChatBubbleFilled, FileDownloadFilled } from '@vicons/material';
+import { onMounted } from "vue"
 // import Button from './components/Button.vue';
 import './index.css'
 
@@ -43,6 +46,12 @@ const goto = (url: string) => {
     window.location.href = url;
     
 }
+const message = useMessage();
+onMounted(() =>{
+    message.info("文档已迁移到 ddsp.dysjs.com, 旧域名不再维护")
+    console.log("mounted");
+    
+})
 </script>
 
 <style lang="scss" scoped>
@@ -51,8 +60,7 @@ const goto = (url: string) => {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    font-family: sfpro, sans-serif;
-    
+    /* font-family: sfpro, sans-serif; */
     .title-bg {
         position: absolute;
         z-index: -1;
@@ -69,7 +77,6 @@ const goto = (url: string) => {
         padding: 64px;
         padding-bottom: 24px;
         color: #f87171;
-        font-family: monospace;
     }
 
     .sub-title {

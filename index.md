@@ -4,5 +4,9 @@ layout: home
 ---
 <script setup lang="ts">
 import MainPage from "./main_page.vue"
+import * as naive from "naive-ui"
+const { NMessageProvider } = naive
 </script>
-<MainPage/>
+<NMessageProvider>
+    <MainPage/>
+</NMessageProvider>

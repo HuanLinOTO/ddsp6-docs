@@ -1,11 +1,3 @@
-@font-face {
-    font-family: sfpro;
-    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2) format(woff2);
-    font-display: swap;
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    font-weight: 700;
-    font-style: normal
-}
 .n-button {
     border-radius: 9999px;
 }

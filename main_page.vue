@@ -20,11 +20,11 @@
                 </template>
                 加入群聊
             </n-button>
-            <n-button type="info" size="large" @click="goto('/start/changelog.html#|| LatestVersionLinkPlaceHolder ||')">
+            <n-button type="info" size="large" @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
                 <template #icon>
                     <FileDownloadFilled></FileDownloadFilled>
                 </template>
-                最新版本 || LatestVersionPlaceHolder ||
+                下载最新版本 || LatestVersionPlaceHolder ||
             </n-button>
         </n-flex>
     </div>

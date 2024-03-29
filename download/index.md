@@ -37,7 +37,7 @@
 
 等待 {{ wait_time }}s 后，方可点击跳转按钮
 
-<NButton @click="gogogo" style="width: 100% ">跳转到 123 云盘</NButton>
+<NButton @click="gogogo" style="width: 100%">跳转到 123 云盘</NButton>
 
 <script lang="ts" setup>
 import { parse, decode_string } from "../utils/url.ts"
@@ -46,12 +46,16 @@ import * as naive from "naive-ui"
 
 const { NButton } = naive 
 
-if (!parse(location.href).link) {
+const params = parse(typeof window === "undefined"?"http://example.com/?link=aHR0cHM6Ly93d3cuMTIzcGFuLmNvbS9zL0JFektqdi1lQ3Fxdi5odG1s&version=MS4wLjAgcmMxMS1maXhlZA==":location.href)
+
+console.log(params)
+
+if (!params.link) {
     // 回到首页
-    location.href = "/"
+    // window.location.href = "/"
 }
-const link = decode_string(parse(location.href).link)
-const version = decode_string(parse(location.href).version)
+const link = decode_string(params.link)
+const version = decode_string(params.version)
 
 const wait_time = ref(15)
 

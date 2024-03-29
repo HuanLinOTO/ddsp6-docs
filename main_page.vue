@@ -43,7 +43,9 @@ const goto = (url: string) => {
     // console.log("goto", url);
     // if (!url.startsWith('http') && !url.startsWith('https'))
     //     url = `http://${window.location.origin}${url}`
-    window.location.href = url;
+    if (typeof window !== 'undefined') {
+        location.href = url;
+    }
     
 }
 const message = useMessage();

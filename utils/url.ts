@@ -1,9 +1,9 @@
 export const encode_string = (str: string) => {
-    return window.btoa(unescape(str))
+    return btoa(unescape(str))
 }
 
 export const decode_string = (str: string) => {
-    return window.atob(str)
+    return atob(str)
 }
 
 export function parse(url) {

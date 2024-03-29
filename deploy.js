@@ -47,7 +47,7 @@ getVersion().then((versions) => {
     const latestVersion = versions[0];
     const params = {
         "VERSIONS": versions.map(i => `
-## [⏬](/download/?link=${encode_string(i.link)}) ${i.date} ${i.version}
+## [⏬](/download/?link=${encode_string(i.link)}&version=${encode_string(i.version)}) ${i.date} ${i.version}
 ${i.changes.map(j => ` - ${j}`).join('\n')} 
         `),
         "LatestVersionLinkPlaceHolder": encode_string(latestVersion.link),

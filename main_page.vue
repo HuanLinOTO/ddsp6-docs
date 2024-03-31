@@ -2,10 +2,13 @@
     <div>
         <div class="title-box">
             <!-- <div class="title-bg"></div> -->
-            <LandingBackground></LandingBackground>
-            <div class="title">DDSP 6.0</div>
-            <div class="sub-title">非官方整合包文档</div>
-            <div class="sub-sub-title">易于使用 | 可用 CPU 训练 | 面向小白</div>
+            <!-- <LandingBackground></LandingBackground> -->
+            <div class="left">
+                <div class="title">DDSP 6.0</div>
+                <div class="sub-title">非官方整合包文档</div>
+                <div class="sub-sub-title">易于使用 | 可用 CPU 训练 | 面向小白</div>
+            </div>
+            <div class="title-bg"></div>
         </div>
         <n-flex justify="center">
             <n-button  type="primary" size="large" @click="goto('/start/')">
@@ -58,42 +61,76 @@ onMounted(() =>{
 
 <style lang="scss" scoped>
 
+@media (max-width: 768px) {
+    .title-bg {
+        display: none;
+    }
+    .title-box {
+        display: block;
+        text-align: center;
+    }
+    .left {
+        padding: 0 !important;
+        .title {
+            font-size: 2.5em;
+        }
+        .sub-title {
+            font-size: 1.5em;
+        }
+        .sub-sub-title {
+            font-size: 1em;
+        }
+    
+    }
+}
 .title-box {
-    text-align: center;
+    justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* font-family: sfpro, sans-serif; */
+    display: flex;
+    // 当屏幕宽度小于 768px ， display none
     .title-bg {
-        position: absolute;
         z-index: -1;
-        height: 100%;
-        width: 100%;
-        --tw-gradient-stops: red, blue;
-        background-image: linear-gradient(to right, var(--tw-gradient-stops));
-        transition: clip-path 0.5s ease-in-out;
-        clip-path: polygon(70.5424% 41.8695%, 75.166% 52.7696%, 44.4262% 36.2115%, 43.5959% 83.2837%, 45.985% 82.9772%, 13.5457% 109.842%, 56.1683% 11.189%, 86.281% 57.6911%, -21.6608% 102.57%, 40.8016% 33.4501%, 48.3169% 82.2832%, 7.33869% 33.7219%, 11.4006% 71.5851%, 68.49% 64.791%, 73.4071% 0.219186%, 85.8941% 24.0206%);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: no-repeat url(./imgs/yxlllc.jpg) 50% 50%;
+        box-shadow:
+            inset 0 0 50px #ffffff9f,
+            inset 20px 0 80px #ff00ff9f,
+            inset -20px 0 80px #00ffff9f,
+            inset 20px 0 300px #ff00ff9f,
+            inset -20px 0 300px #00ffff9f,
+            0 0 50px #ffffff9f,
+            -10px 0 80px #ff00ff9f,
+            10px 0 80px #00ffff9f;
     }
-    .title {
-        font-size: 3em;
-        font-weight: bold;
-        padding: 64px;
-        padding-bottom: 24px;
-        color: #f87171;
-    }
-
-    .sub-title {
-        font-size: 2.25em;
-        font-weight: 500;
-        font-weight: bold;
-        font-family: var(--vp-font-family-base);
-        padding-bottom: 24px;
-    }
-    .sub-sub-title {
-        font-size: 1.25em;
-        font-weight: 500;
-        font-weight: bold;
-        color: #585858;
-        font-family: var(--vp-font-family-base);
+    .left {
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            font-size: 4em;
+            font-weight: bold;
+            padding-bottom: 30px;
+            color: #f87171;
+        }
+    
+        .sub-title {
+            font-size: 3em;
+            font-weight: 500;
+            font-weight: bold;
+            font-family: var(--vp-font-family-base);
+            padding-bottom: 24px;
+        }
+        .sub-sub-title {
+            font-size: 1.25em;
+            font-weight: 500;
+            font-weight: bold;
+            color: #585858;
+            font-family: var(--vp-font-family-base);
+        }
     }
 }
 </style>

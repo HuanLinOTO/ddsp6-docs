@@ -1,126 +1,121 @@
 [
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-eCqqv.html",
-      "date": "2024/3/10",
-      "version": "1.0.0 rc11-fixed",
-      "changes": [
-        "该版本需要额外下载补丁: [Patch 1 for 1.0.0 rc11-fixed](https://www.123pan.com/s/BEzKjv-18qqv.html) 使用该压缩包内的 webui.bin 覆盖完整包的 webui.bin 即可",
-        "修复 rc11 中的一些小 bug",
-        "新增无说话人配置自动 fallback 到默认说话人的功能",
-        "~~再也不深夜写代码了~~"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-ICqqv.html",
-      "date": "2024/3/10",
-      "version": "1.0.0 rc11",
-      "changes": [
-        "新增自动混音功能",
-        "修复了一些小 bug"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-jXqqv.html",
-      "date": "2024/3/10",
-      "version": "1.0.0 rc10-fixed",
-      "changes": [
-        "该版本为紧急修复版本 没有功能更新"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-NXqqv.html",
-      "date": "2024/3/10",
-      "version": "1.0.0 rc10",
-      "changes": [
-        "此版本无法使用 请下载上面的 rc10-fixed",
-        "修复了写入配置覆盖 spk 的问题",
-        "自带 uvr 部分模型，支持推理",
-        "修复启动脚本的问题"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-9fqqv.html",
-      "date": "2024/2/24",
-      "version": "1.0.0 rc9",
-      "changes": [
-        "更新 nsf_hifigan 声码器模型",
-        "去掉了无用日志输出",
-        "添加 FFmpeg，支持 mp3 等其他格式的推理了",
-        "修复了一些小 bug"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-ykqqv.html",
-      "date": "2024/2/15",
-      "version": "1.0.0 rc8",
-      "changes": [
-        "添加了当 spk 字段缺失时的提醒"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-PEqqv.html",
-      "date": "2024/2/15",
-      "version": "1.0.0 rc7",
-      "changes": [
-        "支持保存配置"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-EEqqv.html",
-      "date": "2024/2/15",
-      "version": "1.0.0 rc6\n:::warning\n此版本 bug 较多，已停止下载\n:::",
-      "changes": [
-        "支持在 WebUI 实现训练暂停",
-        "启动 tensorboard 后自动打开"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-WQqqv.html",
-      "date": "2024/2/14",
-      "version": "1.0.0 rc5",
-      "changes": [
-        "支持多说话人训练，推理",
-        "训练：增加最大轮数选项 ~~其实是为了凑整~~",
-        "数据处理：更新手动数据处理",
-        "布局：采用平行布局，更加美观",
-        "更换压缩参数，减小体积",
-        "~~下一个版本上加功德按钮~~"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-V9qqv.html",
-      "date": "2024/2/13",
-      "version": "1.0.0 rc4",
-      "changes": [
-        "训练：新增不使用底模选项",
-        "数据处理：新增使用设备选项",
-        "移除模型"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-l9qqv.html",
-      "date": "2024/2/13",
-      "version": "1.0.0 rc3",
-      "changes": [
-        "修复了归档后缺工作目录的 bug",
-        "此版本自带真寻的模型，绝对不是我不小心打包进去的"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-89qqv.html",
-      "date": "2024/2/13",
-      "version": "1.0.0 rc2",
-      "changes": [
-        "添加群链接",
-        "重打环境，减小体积"
-      ]
-    },
-    {
-      "link": "https://www.123pan.com/s/BEzKjv-W9qqv.html",
-      "date": "2024/2/13",
-      "version": "1.0.0 rc1 ",
-      "changes": [
-        "第一个没多少 bug 的版本"
-      ]
-    }
-  ]
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-uUqqv.html",
+    "date": "2024/3/31",
+    "version": "1.0.1",
+    "changes": [
+      "喜报：DDSP 6.0",
+      "混音功能支持自定义",
+      "更换 BS-ReFormer 模型作为人声提取模型，速度很快",
+      "修复了累计的一大堆 bug",
+      "功能稳定下来啦，现在是正式版了"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-eCqqv.html",
+    "date": "2024/3/10",
+    "version": "1.0.0 rc11-fixed",
+    "changes": [
+      "该版本需要额外下载补丁: [Patch 1 for 1.0.0 rc11-fixed](https://www.123pan.com/s/BEzKjv-18qqv.html) 使用该压缩包内的 webui.bin 覆盖完整包的 webui.bin 即可",
+      "修复 rc11 中的一些小 bug",
+      "新增无说话人配置自动 fallback 到默认说话人的功能",
+      "~~再也不深夜写代码了~~"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-ICqqv.html",
+    "date": "2024/3/10",
+    "version": "1.0.0 rc11",
+    "changes": ["新增自动混音功能", "修复了一些小 bug"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-jXqqv.html",
+    "date": "2024/3/10",
+    "version": "1.0.0 rc10-fixed",
+    "changes": ["该版本为紧急修复版本 没有功能更新"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-NXqqv.html",
+    "date": "2024/3/10",
+    "version": "1.0.0 rc10",
+    "changes": [
+      "此版本无法使用 请下载上面的 rc10-fixed",
+      "修复了写入配置覆盖 spk 的问题",
+      "自带 uvr 部分模型，支持推理",
+      "修复启动脚本的问题"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-9fqqv.html",
+    "date": "2024/2/24",
+    "version": "1.0.0 rc9",
+    "changes": [
+      "更新 nsf_hifigan 声码器模型",
+      "去掉了无用日志输出",
+      "添加 FFmpeg，支持 mp3 等其他格式的推理了",
+      "修复了一些小 bug"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-ykqqv.html",
+    "date": "2024/2/15",
+    "version": "1.0.0 rc8",
+    "changes": ["添加了当 spk 字段缺失时的提醒"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-PEqqv.html",
+    "date": "2024/2/15",
+    "version": "1.0.0 rc7",
+    "changes": ["支持保存配置"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-EEqqv.html",
+    "date": "2024/2/15",
+    "version": "1.0.0 rc6\n:::warning\n此版本 bug 较多，已停止下载\n:::",
+    "changes": ["支持在 WebUI 实现训练暂停", "启动 tensorboard 后自动打开"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-WQqqv.html",
+    "date": "2024/2/14",
+    "version": "1.0.0 rc5",
+    "changes": [
+      "支持多说话人训练，推理",
+      "训练：增加最大轮数选项 ~~其实是为了凑整~~",
+      "数据处理：更新手动数据处理",
+      "布局：采用平行布局，更加美观",
+      "更换压缩参数，减小体积",
+      "~~下一个版本上加功德按钮~~"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-V9qqv.html",
+    "date": "2024/2/13",
+    "version": "1.0.0 rc4",
+    "changes": [
+      "训练：新增不使用底模选项",
+      "数据处理：新增使用设备选项",
+      "移除模型"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-l9qqv.html",
+    "date": "2024/2/13",
+    "version": "1.0.0 rc3",
+    "changes": [
+      "修复了归档后缺工作目录的 bug",
+      "此版本自带真寻的模型，绝对不是我不小心打包进去的"
+    ]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-89qqv.html",
+    "date": "2024/2/13",
+    "version": "1.0.0 rc2",
+    "changes": ["添加群链接", "重打环境，减小体积"]
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-W9qqv.html",
+    "date": "2024/2/13",
+    "version": "1.0.0 rc1 ",
+    "changes": ["第一个没多少 bug 的版本"]
+  }
+]

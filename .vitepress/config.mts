@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "DDSP 5.0 整合包文档",
-  description: "一个 DDSP 5.0 的非官方整合包文档",
+  title: "DDSP 6.0 整合包文档",
+  description: "一个 DDSP 6.0 的非官方整合包文档",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

@@ -3,7 +3,7 @@
         <div class="title-box">
             <!-- <div class="title-bg"></div> -->
             <LandingBackground></LandingBackground>
-            <div class="title">DDSP 5.0</div>
+            <div class="title">DDSP 6.0</div>
             <div class="sub-title">非官方整合包文档</div>
             <div class="sub-sub-title">易于使用 | 可用 CPU 训练 | 面向小白</div>
         </div>

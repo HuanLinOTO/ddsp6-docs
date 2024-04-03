@@ -1,12 +1,22 @@
 [
   {
+    "link": "https://www.123pan.com/s/BEzKjv-A7qqv.html",
+    "date": "2024/4/3",
+    "version": "1.0.2",
+    "changes": [
+      "更新上游代码",
+      "混音控制台的音量调节可用了",
+      "使用非跨进程的 BS-RoFormer 处理音频（人话：更快了）"
+    ]
+  },
+  {
     "link": "https://www.123pan.com/s/BEzKjv-uUqqv.html",
     "date": "2024/3/31",
     "version": "1.0.1",
     "changes": [
       "喜报：DDSP 6.0",
       "混音功能支持自定义",
-      "更换 BS-ReFormer 模型作为人声提取模型，速度很快",
+      "更换 BS-RoFormer 模型作为人声提取模型，速度很快",
       "修复了累计的一大堆 bug",
       "功能稳定下来啦，现在是正式版了"
     ]

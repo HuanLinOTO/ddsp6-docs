@@ -18,7 +18,9 @@ DDSP 6.0 整合包中的底模是我自己炖的 非官方底模（截至发布�
 :::tip
 从 1.0.0 rc11 开始，包内不再自带 uvr 模型，需要自行下载
 
-下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-MCqqv.html)
+下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-h7qqv.html)
+
+下载后解压至整合包根目录 完成操作后你应该能 `other_weights` 文件夹
 :::
 
 等待 {{ wait_time }}s 后，方可点击跳转按钮

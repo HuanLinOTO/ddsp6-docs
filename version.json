@@ -7,7 +7,8 @@
       "更新上游代码",
       "混音控制台的音量调节可用了",
       "使用非跨进程的 BS-RoFormer 处理音频（人话：更快了）"
-    ]
+    ],
+    "patch": "https://www.123pan.com/s/BEzKjv-o7qqv.html"
   },
   {
     "link": "https://www.123pan.com/s/BEzKjv-uUqqv.html",
@@ -30,7 +31,8 @@
       "修复 rc11 中的一些小 bug",
       "新增无说话人配置自动 fallback 到默认说话人的功能",
       "~~再也不深夜写代码了~~"
-    ]
+    ],
+    "patch": "https://www.123pan.com/s/BEzKjv-18qqv.html"
   },
   {
     "link": "https://www.123pan.com/s/BEzKjv-ICqqv.html",

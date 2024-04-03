@@ -1,3 +1,37 @@
 .n-button {
     border-radius: 9999px;
 }
+
+.VPContent  a, code {
+    text-shadow: 0px 0px 30px var(--vp-c-tip-1);
+    animation: anim 1s linear infinite alternate;
+}
+
+.pager-link {
+    transition: box-shadow 0.25s !important;
+    box-shadow: 0px 0px 30px #0000;
+}
+
+.pager-link:hover {
+    box-shadow: 0px 0px 20px var(--vp-c-brand-1);
+    animation: anim 1s linear infinite alternate;
+}
+
+@keyframes anim {
+    from {
+        text-shadow: 0px 0px 20px var(--vp-c-tip-1);
+    }
+
+    to {
+        text-shadow: 0px 0px 35px var(--vp-c-tip-1);
+    }
+}
+
+.dark h2 {
+    text-shadow: 0px 0px 30px #ffffff;
+}
+
+.dark .n-button {
+    color: var(--vp-c-tip-1);
+    box-shadow: 0px 0px 3px var(--vp-c-tip-1);
+}

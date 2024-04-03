@@ -23,6 +23,10 @@ DDSP 6.0 整合包中的底模是我自己炖的 非官方底模（截至发布�
 下载后解压至整合包根目录 完成操作后你应该能 `other_weights` 文件夹
 :::
 
+:::tip 版本信息
+<div v-html="extra_info"></div>
+:::
+
 等待 {{ wait_time }}s 后，方可点击跳转按钮
 
 <NButton @click="gogogo" style="width: 100%">跳转到 123 云盘</NButton>
@@ -31,6 +35,8 @@ DDSP 6.0 整合包中的底模是我自己炖的 非官方底模（截至发布�
 import { parse, decode_string } from "../utils/url.ts"
 import { ref } from "vue"
 import * as naive from "naive-ui"
+
+import versions from "../version.json"
 
 const { NButton } = naive 
 
@@ -45,6 +51,19 @@ if (!params.link) {
 const link = decode_string(params.link)
 const version = decode_string(params.version)
 
+const extra_info = ref("")
+
+const cur_version = versions.find(v => v.version === version)
+console.log(cur_version)
+if(cur_version.patch) {
+    extra_info.value = `
+该版本需要安装补丁才可使用，补丁 <a href="${cur_version.patch}">点击下载</a>
+使用方法：
+将补丁内文件覆盖到整合包根目录
+    `.split("\n").map(l => `<p>${l}</p>`).join("")
+}
+
+
 const wait_time = ref(15)
 
 console.log(link)
@@ -52,7 +71,7 @@ console.log(link)
 const timer = setInterval(() => {
     wait_time.value --
     if (wait_time.value <= 0) {
-        clearInterval(timer)
+        clearInterval(timer);
         // location.href = link
     }
 }, 1000)

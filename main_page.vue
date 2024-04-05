@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <NModalProvider>
         <div class="title-box">
             <!-- <div class="title-bg"></div> -->
             <!-- <LandingBackground></LandingBackground> -->
@@ -17,30 +17,53 @@
                 </template>
                 马上开始
             </n-button>
-            <n-button type="info" size="large"
-                @click="goto('https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0')">
+            <!-- <n-button type="info" size="large"
+                @click="goto('https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0')"> -->
+            <n-button type="info" size="large" @click="() => showModal = true">
                 <template #icon>
                     <ChatBubbleFilled></ChatBubbleFilled>
                 </template>
                 加入群聊
             </n-button>
-            <n-button type="info" size="large"
-                @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
-                <template #icon>
-                    <FileDownloadFilled></FileDownloadFilled>
-                </template>
-                下载最新版本 || LatestVersionPlaceHolder ||
-            </n-button>
+            <n-badge value="新">
+                <n-button type="info" size="large"
+                    @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
+                    <template #icon>
+                        <FileDownloadFilled></FileDownloadFilled>
+                    </template>
+                    下载最新版本 || LatestVersionPlaceHolder ||
+                </n-button>
+            </n-badge>
         </n-flex>
-    </div>
+        <n-modal v-model:show="showModal">
+            <n-card style="width: 600px" title="请选择" :bordered="false" size="huge" role="dialog" aria-modal="true">
+                <!-- //p.qlogo.cn/gh/172701496/172701496/40 -->
+                <n-space vertical>
+                    <n-space class="group-item"
+                        @click="goto('https://qm.qq.com/cgi-bin/qm/qr?k=igP4OFTLm_-8QFpXb5l6qXrunFYJDMDt&jump_from=webapi&authKey=KlzIXtfCZmCm7mv+gFS7GXnUm+cL1DQ2OVoqaY8IOUxxREnIoAnIDHcJOHbQLTo0')">
+                        <n-avatar :size="48" src="https://p.qlogo.cn/gh/172701496/172701496/40" />
+                        幻灵的炼丹工坊一群
+                    </n-space>
+                </n-space>
+                <n-space vertical>
+                    <n-space class="group-item disable">
+                        <n-badge value="暂未开放">
+                            <n-avatar :size="48" src="https://p.qlogo.cn/gh/172701496/172701496/40" />
+                        </n-badge>
+                        幻灵的炼丹工坊二群
+                    </n-space>
+                </n-space>
+            </n-card>
+        </n-modal>
+    </NModalProvider>
 </template>
 
 <script lang="ts" setup>
 import LandingBackground from './components/LandingBackground.vue';
 import * as naive from "naive-ui"
-const { NButton, NFlex, useMessage } = naive
+const { NButton, NSpace, NFlex, NModal, NModalProvider, NAvatar, NBadge, NCard, useMessage } = naive
 import { RocketLaunchRound, ChatBubbleFilled, FileDownloadFilled } from '@vicons/material';
-import { onMounted } from "vue"
+import { onMounted, ref } from "vue"
 // import Button from './components/Button.vue';
 import './index.css'
 
@@ -49,10 +72,13 @@ const goto = (url: string) => {
     // if (!url.startsWith('http') && !url.startsWith('https'))
     //     url = `http://${window.location.origin}${url}`
     if (typeof window !== 'undefined') {
-        location.href = url;
+        window.open(url, "_blank")
     }
-
+    showModal.value = false
 }
+
+const showModal = ref(false)
+
 const message = useMessage();
 onMounted(() => {
     message.info("文档已迁移到 ddsp.dysjs.com, 旧域名不再维护")
@@ -87,6 +113,31 @@ onMounted(() => {
             font-size: 1em;
         }
 
+    }
+}
+
+.group-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s !important;
+    background-color: #fff;
+    &:hover {
+        background-color: #e0e0e0;
+    }
+    div {
+        display: flex;
+        max-width: 100%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &.disable .n-avatar {
+        filter: brightness(0.3);
     }
 }
 

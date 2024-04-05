@@ -37,7 +37,7 @@ console.log(cur_version)
 
 if (cur_version?.patch) {
     extra_info.value.push(`
-该版本需要安装补丁才可使用，补丁 <a href="${cur_version?.patch}">点击下载</a>
+该版本需要安装补丁才可使用，补丁 <a href="${cur_version?.patch}" target="_blank">点击下载</a>
 使用方法：
 将补丁内文件覆盖到整合包根目录
     `.split("\n").map(l => `<p>${l}</p>`).join(""))
@@ -47,7 +47,7 @@ if (cur_version?.env) {
     extra_info.value.push(`
 该版本需要搭配环境包才可使用
 环境版本 ${cur_version?.env}，如果您已安装过该环境包，可直接下载整合包
-<a href="${env_versions[cur_version?.env]}">点击下载</a>
+<a href="${env_versions[cur_version?.env]}" target="_blank">点击下载</a>
 将环境包内文件覆盖到整合包根目录，确保根目录存在 <code>.conda</code> 文件夹即可
     `.split("\n").map(l => `<p>${l}</p>`).join(""))
 }

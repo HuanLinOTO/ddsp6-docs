@@ -1,16 +1,18 @@
 <template>
-    <template v-for="(item, index) in extra_info">
-        <div class="tip custom-block">
-            <p class="custom-block-title">版本额外说明 {{ index+1 }}</p>
-            <div v-html="item"></div>
-        </div>
-    </template>
-    <n-space vertical>
-        <div>
-            等待 {{ props.wait_time }}s 后，方可点击跳转按钮
-        </div>
-        <NButton @click="gogogo" style="width: 100%">跳转到 123 云盘</NButton>
-    </n-space>
+    <ClientOnly>
+        <template v-for="(item, index) in extra_info">
+            <div class="tip custom-block">
+                <p class="custom-block-title">版本额外说明 {{ index+1 }}</p>
+                <div v-html="item"></div>
+            </div>
+        </template>
+        <n-space vertical>
+            <div>
+                等待 {{ props.wait_time }}s 后，方可点击跳转按钮
+            </div>
+            <NButton @click="gogogo" style="width: 100%">跳转到 123 云盘</NButton>
+        </n-space>
+    </ClientOnly>
 </template>
 
 <script lang="ts" setup>

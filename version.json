@@ -1,11 +1,16 @@
 [
   {
+    "link": "https://www.123pan.com/s/BEzKjv-yZqqv.html",
+    "date": "2024/4/6",
+    "version": "1.0.3",
+    "changes": ["修复了大量 bug"],
+    "env": "v1"
+  },
+  {
     "link": "https://www.123pan.com/s/BEzKjv-1bqqv.html",
     "date": "2024/4/5",
     "version": "1.0.2 fixed",
-    "changes": [
-      "修复了大量的累计 bug"
-    ],
+    "changes": ["修复了大量的累计 bug"],
     "env": "v1"
   },
   {

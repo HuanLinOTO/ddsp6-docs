@@ -32,7 +32,7 @@ import { ref } from "vue"
 
 import comp from "./comp.vue"
 
-const params = parse(typeof window === "undefined"?"http://example.com/?link=aHR0cHM6Ly93d3cuMTIzcGFuLmNvbS9zL0JFektqdi1lQ3Fxdi5odG1s&version=MS4wLjAgcmMxMS1maXhlZA==":location.href)
+const params = parse(typeof window === "undefined"?"http://localhost:5173/download/?link=aHR0cHM6Ly93d3cuMTIzcGFuLmNvbS9zL0JFektqdi1lQ3Fxdi5odG1s&version=MS4wLjAgcmMxMS1maXhlZA==":location.href)
 
 console.log(params)
 

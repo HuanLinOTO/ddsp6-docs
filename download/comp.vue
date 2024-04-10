@@ -88,9 +88,9 @@ if (cur_version?.env) {
 }
 
 const gogogo = () => {
-    // if (props.wait_time > 0) {
-    //     return
-    // }
+    if (props.wait_time > 0) {
+        return
+    }
     // window.open(props.link, "_blank")
     go_link.value = props.link
     showModal.value = true

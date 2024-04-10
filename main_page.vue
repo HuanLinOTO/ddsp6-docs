@@ -59,7 +59,6 @@
 </template>
 
 <script lang="ts" setup>
-import LandingBackground from './components/LandingBackground.vue';
 import * as naive from "naive-ui"
 const { NButton, NSpace, NFlex, NModal, NModalProvider, NAvatar, NBadge, NCard, useMessage } = naive
 import { RocketLaunchRound, ChatBubbleFilled, FileDownloadFilled } from '@vicons/material';
@@ -74,7 +73,7 @@ const goto = (url: string) => {
     if (typeof window !== 'undefined') {
         window.open(url, "_blank")
     }
-    showModal.value = false
+    showModal.value = false;
 }
 
 const showModal = ref(false)

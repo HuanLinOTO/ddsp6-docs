@@ -7,7 +7,7 @@
 :::tip
 从 1.0.0 rc11 开始，包内不再自带 uvr 模型，需要自行下载
 
-下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-MCqqv.html)
+下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-h7qqv.html)
 :::
 
 

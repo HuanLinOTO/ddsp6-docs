@@ -1,6 +1,13 @@
 [
   {
     "link": "https://www.123pan.com/s/BEzKjv-yZqqv.html",
+    "date": "2024/4/14",
+    "version": "1.1.0",
+    "changes": ["支持了实时", "修复了底模步数忘记清零的问题"],
+    "env": "v1"
+  },
+  {
+    "link": "https://www.123pan.com/s/BEzKjv-yZqqv.html",
     "date": "2024/4/6",
     "version": "1.0.3",
     "changes": ["修复了大量 bug"],

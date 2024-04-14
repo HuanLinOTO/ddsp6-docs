@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
+import afd_svg from "./afd_svg";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,32 +8,32 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '全流程教程', link: '/start/index' },
-      { text: '常见问题', link: '/faq/index' }
+      { text: "Home", link: "/" },
+      { text: "全流程教程", link: "/start/index" },
+      { text: "常见问题", link: "/faq/index" },
+      { text: "ModelHub", link: "/model_hub/index" },
     ],
 
     sidebar: [
       {
-        text: '全流程教程',
+        text: "全流程教程",
         items: [
-          { text: '更新日志', link: '/start/changelog' },
-          { text: '下载与安装', link: '/start/download' },
-          { text: '正式使用', link: '/start/launch' },
-        ]
+          { text: "更新日志", link: "/start/changelog" },
+          { text: "下载与安装", link: "/start/download" },
+          { text: "正式使用", link: "/start/launch" },
+        ],
       },
       {
-        text: '常见问题',
-        items: [
-          { text: '常见问题-首页', link: '/faq/index' },
-        ]
-      }
+        text: "常见问题",
+        items: [{ text: "常见问题-首页", link: "/faq/index" }],
+      },
     ],
     search: {
-      provider: 'local'
+      provider: "local",
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/huanlinoto' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/huanlinoto/ddsp6-docs" },
+      { icon: { svg: afd_svg }, link: "https://afdian.net/a/dwhlqwq" },
+    ],
+  },
+});

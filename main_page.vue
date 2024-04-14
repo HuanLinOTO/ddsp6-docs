@@ -25,7 +25,8 @@
                 </template>
                 加入群聊
             </n-button>
-            <n-badge value="新">
+            <!-- @vue-ignore -->
+            <n-badge value="新" v-if="'|| ShowNewBadge ||' == 'true'">
                 <n-button type="info" size="large"
                     @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
                     <template #icon>
@@ -34,6 +35,15 @@
                     下载最新版本 || LatestVersionPlaceHolder ||
                 </n-button>
             </n-badge>
+            <div v-else>
+                <n-button type="info" size="large"
+                    @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
+                    <template #icon>
+                        <FileDownloadFilled></FileDownloadFilled>
+                    </template>
+                    下载最新版本 || LatestVersionPlaceHolder ||
+                </n-button>
+            </div>
         </n-flex>
         <n-modal v-model:show="showModal">
             <n-card style="width: 600px" title="请选择" :bordered="false" size="huge" role="dialog" aria-modal="true">
@@ -59,6 +69,7 @@
 </template>
 
 <script lang="ts" setup>
+import LandingBackground from './components/LandingBackground.vue';
 import * as naive from "naive-ui"
 const { NButton, NSpace, NFlex, NModal, NModalProvider, NAvatar, NBadge, NCard, useMessage } = naive
 import { RocketLaunchRound, ChatBubbleFilled, FileDownloadFilled } from '@vicons/material';
@@ -73,7 +84,7 @@ const goto = (url: string) => {
     if (typeof window !== 'undefined') {
         window.open(url, "_blank")
     }
-    showModal.value = false;
+    showModal.value = false
 }
 
 const showModal = ref(false)

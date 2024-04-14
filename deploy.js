@@ -52,7 +52,9 @@ ${i.changes.map(j => ` - ${j}`).join('\n')}
         `),
         "LatestVersionLinkPlaceHolder": encode_string(latestVersion.link),
         "LatestVersionPlaceHolder": latestVersion.version,
-        "LatestVersionPlaceHolderEncoded": encode_string(latestVersion.version)
+        "LatestVersionPlaceHolderEncoded": encode_string(latestVersion.version),
+        // 如果发布时间小于3天，显示new badge
+        "ShowNewBadge": (new Date(latestVersion.date)).getTime() > Date.now() - (3 * 24 * 60 * 60 * 1000) ? "true" : "false"
     }
     replace_file("main_page.vue", params);
     replace_file("start/changelog.md", params);

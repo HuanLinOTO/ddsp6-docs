@@ -3,7 +3,7 @@
         <NModalProvider>
             <template v-for="(item, index) in extra_info">
                 <div class="tip custom-block">
-                    <p class="custom-block-title">版本额外说明 {{ index+1 }}</p>
+                    <p class="custom-block-title">版本额外说明 {{ index + 1 }}</p>
                     <div v-html="item"></div>
                 </div>
             </template>
@@ -14,8 +14,7 @@
                 <NButton @click="gogogo" style="width: 100%">跳转到 123 云盘</NButton>
             </n-space>
             <n-modal v-model:show="showModal">
-                <n-card style="width: 600px" title="请确认" :bordered="false" size="huge" role="dialog"
-                    aria-modal="true">
+                <n-card style="width: 600px" title="请确认" :bordered="false" size="huge" role="dialog" aria-modal="true">
                     <!-- //p.qlogo.cn/gh/172701496/172701496/40 -->
                     <n-space vertical>
                         <template v-for="(question, index) in questions">
@@ -55,7 +54,7 @@ const question_values = ref<boolean[]>([])
 
 const check_question = () => {
     console.log(question_values.value);
-    
+
     // 检查是不是都选了
     if (question_values.value.every(v => v) && question_values.value.length === questions.value.length) {
         window.open(go_link.value, "_blank")
@@ -84,7 +83,7 @@ if (cur_version?.env) {
 <a href="${env_versions[cur_version?.env]}" target="_blank">点击下载</a>
 将环境包内文件覆盖到整合包根目录，确保根目录存在 <code>.conda</code> 文件夹即可
     `.split("\n").map(l => `<p>${l}</p>`).join(""))
-    questions.value.push("我已知晓该版本需要安装环境包")
+    questions.value.push("我已知晓该版本需要安装环境包，并且知道如何安装环境（不知道的看版本额外说明）")
 }
 
 const gogogo = () => {
@@ -98,6 +97,4 @@ const gogogo = () => {
 
 </script>
 
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>

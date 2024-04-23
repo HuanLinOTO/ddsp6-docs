@@ -35,5 +35,9 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/huanlinoto/ddsp6-docs" },
       { icon: { svg: afd_svg }, link: "https://afdian.net/a/dwhlqwq" },
     ],
+    footer: {
+      message: '备案 苏ICP备2024094491号-1',
+      copyright: 'Copyright © 2024 多玩幻灵qwq'
+    }
   },
 });

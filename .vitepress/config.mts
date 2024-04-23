@@ -36,7 +36,7 @@ export default defineConfig({
       { icon: { svg: afd_svg }, link: "https://afdian.net/a/dwhlqwq" },
     ],
     footer: {
-      message: '备案 苏ICP备2024094491号-1',
+      message: '<a href="http://beian.miit.gov.cn/?spm=a2c4g.11174386.n2.3.41d561dbuHrgEv">备案 苏ICP备2024094491号-1</a>',
       copyright: 'Copyright © 2024 多玩幻灵qwq'
     }
   },

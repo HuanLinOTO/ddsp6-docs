@@ -53,8 +53,7 @@ ${i.changes.map(j => ` - ${j}`).join('\n')}
         "LatestVersionLinkPlaceHolder": encode_string(latestVersion.link),
         "LatestVersionPlaceHolder": latestVersion.version,
         "LatestVersionPlaceHolderEncoded": encode_string(latestVersion.version),
-        // 如果发布时间小于3天，显示new badge
-        "ReleaseTime": (new Date(latestVersion.date)).getTime()
+        "ReleaseTime": latestVersion.date
     }
     replace_file("main_page.vue", params);
     replace_file("start/changelog.md", params);

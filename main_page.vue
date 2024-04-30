@@ -26,7 +26,7 @@
                 加入群聊
             </n-button>
             <!-- @vue-ignore -->
-            <n-badge value="新" v-if="new Date('|| ReleaseTime ||') > Date.now() - (3 * 24 * 60 * 60 * 1000)">
+            <n-badge value="新" v-if="  ">
                 <n-button type="info" size="large"
                     @click="goto('/download/?link=|| LatestVersionLinkPlaceHolder ||&version=|| LatestVersionPlaceHolderEncoded ||')">
                     <template #icon>

@@ -15,14 +15,6 @@ DDSP 6.0 整合包中的底模是我自己炖的 非官方底模（截至发布�
 <img src="/imgs/{DB89BEF3-A9CF-4d4b-9CDD-D215FBE10D5B}.png"/>
 :::
 
-:::tip
-从 1.0.0 rc11 开始，包内不再自带 uvr 模型，需要自行下载
-
-下载链接：[uvr 模型](https://www.123pan.com/s/BEzKjv-h7qqv.html)
-
-下载后解压至整合包根目录 完成操作后你应该能 `other_weights` 文件夹
-:::
-
 <comp :wait_time="wait_time" :link="link" :version="version"></comp>
 
 <script lang="ts" setup>

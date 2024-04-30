@@ -70,7 +70,9 @@ console.log(cur_version)
 if (cur_version?.patch) {
     extra_info.value.push(`
 该版本需要安装补丁才可使用，补丁 <a href="${cur_version?.patch}" target="_blank">点击下载</a>
+
 使用方法：
+
 将补丁内文件覆盖到整合包根目录
     `.split("\n").map(l => `<p>${l}</p>`).join(""))
     questions.value.push("我已知晓该版本需要安装补丁")
@@ -79,11 +81,24 @@ if (cur_version?.patch) {
 if (cur_version?.env) {
     extra_info.value.push(`
 该版本需要搭配环境包才可使用
+
 环境版本 ${cur_version?.env}，如果您已安装过该环境包，可直接下载整合包
+
 <a href="${env_versions[cur_version?.env]}" target="_blank">点击下载</a>
+
 将环境包内文件覆盖到整合包根目录，确保根目录存在 <code>.conda</code> 文件夹即可
     `.split("\n").map(l => `<p>${l}</p>`).join(""))
     questions.value.push("我已知晓该版本需要安装环境包，并且知道如何安装环境（不知道的看版本额外说明）")
+}
+
+if (cur_version?.env == "v1" || cur_version?.env == "v2") {
+    extra_info.value.push(`
+从 1.0.0 rc11 开始到 v3 环境包(也就是 v1.1.2 本体)，包内不再自带 uvr 模型，需要自行下载
+
+下载链接： <a href="https://www.123pan.com/s/BEzKjv-h7qqv.html">uvr 模型</a>
+
+下载后解压至整合包根目录 完成操作后你应该能 <code>other_weights</code> 文件夹
+    `.split("\n").map(l => `<p>${l}</p>`).join(""))
 }
 
 const gogogo = () => {

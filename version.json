@@ -1,5 +1,15 @@
 [
   {
+    "link": "https://www.123pan.com/s/BEzKjv-196qv.html",
+    "date": "2024/5/1",
+    "version": "1.1.2",
+    "changes": [
+      "模型管理：支持添加额外说明",
+      "模型管理：添加了已归档文件夹的移动操作"
+    ],
+    "env": "v2"
+  },
+  {
     "link": "https://www.123pan.com/s/BEzKjv-WT6qv.html",
     "date": "2024/4/20",
     "version": "1.1.1",

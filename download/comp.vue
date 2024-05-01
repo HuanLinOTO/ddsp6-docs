@@ -48,7 +48,7 @@ const props = defineProps<{
 
 const extra_info = ref<string[]>([])
 
-const questions = ref<string[]>(["我已知晓使用去伴奏功能需要额外下载模型"])
+const questions = ref<string[]>([])
 
 const question_values = ref<boolean[]>([])
 
